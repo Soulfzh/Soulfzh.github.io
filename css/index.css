@@ -18,10 +18,10 @@
 	.bg_01 {
 
 	height: 500px;
+		height: 500px;
 		background-image:url(../images/about.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-attachment: fixed;
 	}
 
 	.head_text {

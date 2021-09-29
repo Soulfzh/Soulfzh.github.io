@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+audio {
+    position: absolute;
+    top: 0;
+
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+button {
+    position: absolute;
+    top: 0px;
+    visibility: hidden;
+}
+
+.progress {
+    width: 100vw;
+    height: 5px;
+    position: absolute;
+    top: 0px;
+    background: #00000010;
+    z-index: 0;
+    /* visibility: hidden; */
+}
+
+.bar {
+    width: 0px;
+    height: 100%;
+    background: rgb(231, 77, 60);
+    opacity: 0.6;
+    border-radius: 5px;
+}
+
+.visable {
+    display: block;
+}

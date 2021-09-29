@@ -1,4 +1,10 @@
 body {
+	background-image: linear-gradient(to top, #060d1d 0%, #1b3b64 100%);
+	font-family: 'Microsoft YaHei', 'Lantinghei SC', 'Open Sans', Arial, 'Hiragino Sans GB', 'STHeiti', 'WenQuanYi Micro Hei', 'SimSun', sans-serif;
+	margin: 0;
+	height: 100vh;
+}
+body {
     background-color: #fff;
     animation: change-background 3s linear infinite;
 }
@@ -541,4 +547,277 @@ body {
         height: 20px;
         background-color: #ffc107;
     }
+}
+
+.counter {
+	width: 60%;
+	height: 50%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.nums {
+	color: #3498db;
+	position: relative;
+	font-size: 2500%;
+	overflow: hidden;
+	width: 100%;
+	height: 75%;
+}
+
+.nums span {
+	position: absolute;
+	top: 55%;
+	font-family: 'MiaoXiaoJieJ1f46334cea213b8';
+	transform: translate(-50%, -50%) rotate(180deg);
+	transform-origin: bottom center;
+
+}
+
+.nums span.in {
+	transform: translate(-50%, -50%) rotate(0deg);
+	animation: goIn .5s ease-in-out;
+}
+
+.nums span.out {
+	animation: goOut .5s ease-in-out;
+}
+
+h4 {
+	font-family: 'MiaoXiaoJieJ1f46334cea213b8';
+}
+
+.plat {
+	position: absolute;
+	bottom: 23%;
+	width: 100%;
+	height: 4%;
+	border-radius: 50%;
+	background-color: #3b5c86;
+	animation: a1 11s infinite linear;
+}
+
+.line {
+	position: absolute;
+	bottom: 15%;
+	width: 100%;
+	height: 10%;
+	border-radius: 0 0 50% 50%;
+	background-color: #1b3b64;
+	animation: a2 11s infinite linear;
+
+}
+
+.circle {
+	position: absolute;
+	left: 10%;
+	bottom: 5%;
+	width: 80%;
+	height: 15%;
+	border-radius: 0 0 50% 50%;
+	background-color: #0a2f5f;
+	animation: a3 11s infinite linear;
+
+}
+
+.scircle {
+	position: absolute;
+	left: 25%;
+	bottom: 0%;
+	width: 50%;
+	height: 10%;
+	border-radius: 0 0 50% 50%;
+	background-color: #041124;
+}
+
+@keyframes goIn {
+	0% {
+		transform: translate(-50%, -50%) rotate(180deg);
+	}
+
+	30% {
+		transform: translate(-50%, -50%) rotate(90deg);
+	}
+
+	40% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+
+	65% {
+		transform: translate(-50%, -50%) rotate(20deg);
+	}
+
+	90%,
+	100% {
+		transform: translate(-50%, -5 0%) rotate(0deg);
+	}
+
+}
+
+@keyframes goOut {
+
+	0%,
+	30% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+
+	30% {
+		transform: translate(-50%, -50%) rotate(20deg);
+	}
+
+	60% {
+		transform: translate(-50%, -50%) rotate(-20deg);
+	}
+
+	80% {
+		transform: translate(-50%, -50%) rotate(-90deg);
+	}
+
+	100% {
+		transform: translate(-50%, -50%) rotate(-180deg);
+	}
+}
+
+@keyframes a1 {
+	0% {
+		background-color: #3b5c86;
+	}
+
+	10% {
+		background-color: #319b5d;
+	}
+
+	20% {
+		background-color: #999b31;
+	}
+
+	30% {
+		background-color: #984f9b;
+	}
+
+	40% {
+		background-color: #9e5050;
+	}
+
+	50% {
+		background-color: #468b66;
+	}
+
+	60% {
+		background-color: #469168;
+	}
+
+	70% {
+		background-color: #8d9957;
+	}
+
+	80% {
+		background-color: #598d70;
+	}
+
+	90% {
+		background-color: #995d94;
+	}
+
+	100% {
+		background-color: #3b5c86;
+	}
+
+}
+
+@keyframes a2 {
+	0% {
+		background-color: #1b3b64;
+	}
+
+	10% {
+		background-color: #0d7438;
+	}
+
+	20% {
+		background-color: #68690a;
+	}
+
+	30% {
+		background-color: #7c1580;
+	}
+
+	40% {
+		background-color: #7e1919;
+	}
+
+	50% {
+		background-color: #509e9e;
+	}
+
+	60% {
+		background-color: #1b834a;
+	}
+
+	70% {
+		background-color: #778a23;
+	}
+
+	80% {
+		background-color: #237e4b;
+	}
+
+	90% {
+		background-color: #7a1d73;
+	}
+
+	100% {
+		background-color: #1b3b64;
+	}
+
+}
+
+@keyframes a3 {
+	0% {
+		background-color: #0a2f5f;
+	}
+
+	10% {
+		background-color: #055727;
+	}
+
+	20% {
+		background-color: #505203;
+	}
+
+	30% {
+		background-color: #430446;
+	}
+
+	40% {
+		background-color: #3f0404;
+	}
+
+	50% {
+		background-color: #034d4d;
+	}
+
+	60% {
+		background-color: #05572a;
+	}
+
+	70% {
+		background-color: #3a4605;
+	}
+
+	80% {
+		background-color: #043f1e;
+	}
+
+	90% {
+		background-color: #460340;
+	}
+
+	100% {
+		background-color: #0a2f5f;
+	}
+
 }
